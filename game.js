@@ -53,7 +53,7 @@ function play(userChoice) {
   ) {
     document.getElementById("result").innerHTML = "You win!";
     playerScore++;
-    document.getElementById("pscore").innerHTML = computerScore;
+    document.getElementById("pscore").innerHTML = playerScore;
     console.log("player:" + playerScore);
   } else {
     document.getElementById("result").innerHTML = "Computer wins!";
@@ -62,3 +62,16 @@ function play(userChoice) {
     console.log("computer:" + computerScore);
   }
 }
+if (playerScore==5){
+  alert("Player Wins!");
+  playerScore=0;
+  computerScore=0;
+  document.getElementById("pscore").innerHTML = playerScore;
+  document.getElementById("cscore").innerHTML = computerScore;
+  else if (computerScore==5){
+    alert("Computer Wins!);
+  playerScore=0;
+  computerScore=0;
+  document.getElementById("pscore").innerHTML = playerScore;
+  document.getElementById("cscore").innerHTML = computerScore;
+  
