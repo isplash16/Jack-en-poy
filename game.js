@@ -61,8 +61,7 @@ function play(userChoice) {
     document.getElementById("cscore").innerHTML = computerScore;
     console.log("computer:" + computerScore);
   }
-}
-if (playerScore==5){
+  if (playerScore==5){
   alert("Player Wins!");
   playerScore=0;
   computerScore=0;
@@ -75,3 +74,5 @@ if (playerScore==5){
   document.getElementById("pscore").innerHTML = playerScore;
   document.getElementById("cscore").innerHTML = computerScore;
   
+
+}
