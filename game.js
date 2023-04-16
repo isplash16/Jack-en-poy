@@ -61,7 +61,18 @@ function play(userChoice) {
     document.getElementById("cscore").innerHTML = computerScore;
     console.log("computer:" + computerScore);
   }
-
-  
-
+  if (playerScore == 5) {
+    alert("Player Wins!");
+    playerScore = 0;
+    computerScore = 0;
+    document.getElementById("pscore").innerHTML = playerScore;
+    document.getElementById("cscore").innerHTML = computerScore;
+  }
+  if (computerScore == 5) {
+    alert("Computer Wins!");
+    playerScore = 0;
+    computerScore = 0;
+    document.getElementById("pscore").innerHTML = playerScore;
+    document.getElementById("cscore").innerHTML = computerScore;
+  }
 }
