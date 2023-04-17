@@ -18,6 +18,9 @@ h1 {
   perspective: 1000px;
   align-items: center;
 }
+.fa-hand-scissors {
+  transform: rotate(90deg);
+}
 
 .card-front,
 .card-back {
@@ -71,19 +74,100 @@ h1 {
 }
 #prock {
   display: none;
+  left: 50% !important;
+  top: 50% !important;
+  transform: translate(-50%, -50%) rotate(90deg) !important;
 }
 #ppaper {
   display: none;
+  left: 50% !important;
+  top: 50% !important;
+  transform: translate(-50%, -50%) rotate(90deg) !important;
 }
 #pscissors {
   display: none;
+  left: 50% !important;
+  top: 50% !important;
+  transform: translate(-50%, -50%) scaleX(-1) !important;
 }
 #crock {
   display: none;
+  left: 50% !important;
+  top: 50% !important;
+  transform: translate(-50%, -50%) rotate(-90deg) scaleX(-1) !important;
 }
 #cpaper {
   display: none;
+  left: 50% !important;
+  top: 50% !important;
+  transform: translate(-50%, -50%) scaleX(-1) rotate(90deg) !important;
 }
 #cscissors {
   display: none;
+  left: 50% !important;
+  top: 50% !important;
+  transform: translate(-50%, -50%) !important;
+}
+@media screen and (max-width: 281px) {
+  .compcard,
+  .playercard {
+    position: relative;
+    width: 100px;
+    height: 200px;
+    perspective: 1000px;
+    align-items: center;
+  }
+  .score-head {
+    font-size: 7vw !important;
+  }
+  #result {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5vh;
+    font-size: 3vh;
+    margin: 3vh 0 !important;
+  }
+}
+@media screen and (max-width: 375px) {
+  .compcard,
+  .playercard {
+    position: relative;
+    width: 100px;
+    height: 200px;
+    perspective: 1000px;
+    align-items: center;
+  }
+  .score-head {
+    font-size: 7vw !important;
+  }
+  #result {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5vh;
+    font-size: 3vh;
+    margin: 3vh 0 !important;
+  }
+}
+@media screen and (max-width: 393px) {
+  .compcard,
+  .playercard {
+    position: relative;
+    width: 150px;
+    height: 200px;
+    perspective: 1000px;
+    align-items: center;
+  }
+  .score-head {
+    font-size: 7vw !important;
+  }
+  #result {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5vh;
+    font-size: 3vh;
+    margin: 3vh 0 !important;
+  }
 }

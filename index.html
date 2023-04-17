@@ -15,8 +15,8 @@
   <body>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-4"></div>
-        <div class="gamediv col-md-4 bg-warning">
+        <div class="col-lg-4 bg-info"></div>
+        <div class="gamediv col-lg-4 bg-warning">
           <div class="row">
             <h1 class="text-center mt-5">
               <i class="fa-solid fa-hand-back-fist"></i
@@ -25,13 +25,15 @@
               Jack En Poy
             </h1>
             <div class="row">
-              <p class="my-5" id="result"></p>
+              <p class="my-md-5" id="result"></p>
               <div class="col-6">
-                <h1 class="text-center">
+                <h1 class="text-center score-head">
                   Player:<br /><span id="pscore">0</span>
                 </h1>
                 <div class="playercard mx-auto text-center">
-                  <div class="card-front d-flex align-items-center">
+                  <div
+                    class="card-front d-flex align-items-center bg-info rounded border border-5 border-black"
+                  >
                     <h1 class="mx-auto" id="playerchoose">
                       <i id="prock" class="fa-solid fa-hand-back-fist"></i>
                       <i id="ppaper" class="fa-solid fa-hand"></i>
@@ -41,11 +43,13 @@
                 </div>
               </div>
               <div class="col-6">
-                <h1 class="text-center">
+                <h1 class="text-center score-head">
                   Computer:<br /><span id="cscore">0</span>
                 </h1>
                 <div class="compcard mx-auto text-center">
-                  <div class="card-front d-flex align-items-center">
+                  <div
+                    class="card-front d-flex align-items-center bg-danger rounded border border-5 border-black"
+                  >
                     <h1 class="mx-auto" id="compchoose">
                       <i id="crock" class="fa-solid fa-hand-back-fist"></i>
                       <i id="cpaper" class="fa-solid fa-hand"></i>
@@ -84,7 +88,7 @@
           </div>
         </div>
 
-        <div class="col-md-4"></div>
+        <div class="col-lg-4 bg-danger"></div>
       </div>
     </div>
 

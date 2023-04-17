@@ -13,22 +13,25 @@ function play(userChoice) {
   // generate computer's choice
 
   var computerChoice = Math.random();
-  console.log(computerChoice);
+
   if (computerChoice < 0.34) {
     computerChoice = "rock";
     crock.style.display = "block";
     cscissors.style.display = "none";
     cpaper.style.display = "none";
+    console.log(userChoice + " vs " + computerChoice);
   } else if (computerChoice <= 0.67) {
     computerChoice = "paper";
     crock.style.display = "none";
     cscissors.style.display = "none";
     cpaper.style.display = "block";
+    console.log(userChoice + " vs " + computerChoice);
   } else {
     computerChoice = "scissors";
     crock.style.display = "none";
     cscissors.style.display = "block";
     cpaper.style.display = "none";
+    console.log(userChoice + " vs " + computerChoice);
   }
   if (userChoice === "rock") {
     rock.style.display = "block";
@@ -67,6 +70,7 @@ function play(userChoice) {
     computerScore = 0;
     document.getElementById("pscore").innerHTML = playerScore;
     document.getElementById("cscore").innerHTML = computerScore;
+    document.getElementById("result").innerHTML = "";
   }
   if (computerScore == 5) {
     alert("Computer Wins!");
@@ -74,5 +78,6 @@ function play(userChoice) {
     computerScore = 0;
     document.getElementById("pscore").innerHTML = playerScore;
     document.getElementById("cscore").innerHTML = computerScore;
+    document.getElementById("result").innerHTML = "";
   }
 }
